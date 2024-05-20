@@ -128,10 +128,10 @@ if page == "Phase 1: Planning and Preparation":
       - Development Team: 3 scrum teams.
       - Management: Executive sponsors, product managers.
     - **Roles and Responsibilities**:
-      - Project Sponsor: John Doe, VP of Product Development.
-      - Project Manager: Jane Smith.
+      - Project Sponsor: Reinhard Vock, VP of Product Development.
+      - Project Manager: Timur Timerbaev.
+      - Client Liaison: Arutyun Enfendzhyan.
       - Scrum Teams: Responsible for development and testing.
-      - Client Liaison: Mark Johnson.
     - **Communication Plan**:
       - Weekly Status Reports: Sent every Friday using **Teams**.
       - Monthly Review Meetings: First Monday of each month via **Teams**.
