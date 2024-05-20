@@ -132,9 +132,9 @@ if page == "Phase 1: Planning and Preparation":
       - Scrum Teams: Responsible for development and testing.
       - Client Liaison: Mark Johnson.
     - **Communication Plan**:
-      - Weekly Status Reports: Sent every Friday using **Jira**.
+      - Weekly Status Reports: Sent every Friday using **Teams**.
       - Monthly Review Meetings: First Monday of each month via **Teams**.
-      - Communication Channels: Email, **Teams**, **Jira**.
+      - Communication Channels: **Teams** & **Jira**.
       - Feedback Loops: Monthly surveys using **Teams**.
     """)
     st.write("""
