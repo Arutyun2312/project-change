@@ -105,6 +105,7 @@ def create_gantt_chart(df, phase, color_mapping=None):
 # Explanatory text and chart based on the selected page
 if page == "Phase 1: Planning and Preparation":
     st.title('Phase 1: Planning and Preparation (May 21 - May 27)')
+    st.altair_chart(create_gantt_chart(df, "Phase 1: Planning and Preparation"), use_container_width=True)
     st.write("""
     **Finalize Detailed Project Scope and Objectives (May 21 - May 22)**
       - **Goals Refinement**:
@@ -142,10 +143,10 @@ if page == "Phase 1: Planning and Preparation":
     - **Agile Training**: Conduct Agile training sessions for the teams.
     - **Tool Setup**: Set up Jira, Confluence, and Teams for project management and communication.
     """)
-    st.altair_chart(create_gantt_chart(df, "Phase 1: Planning and Preparation"), use_container_width=True)
 
 elif page == "Phase 2: Execution and Monitoring":
     st.title('Phase 2: Execution and Monitoring (May 28 - July 8)')
+    st.altair_chart(create_gantt_chart(df, "Phase 2: Execution and Monitoring", color_mapping), use_container_width=True)
     st.write("""
     **Sprint 1 (May 28 - June 10)**
     - **Sprint Planning (May 28)**: Define sprint backlog, assign tasks in Jira.
@@ -170,10 +171,10 @@ elif page == "Phase 2: Execution and Monitoring":
     - **Beta Testing**: Beta phase starts June 15, ends July 1.
     - **Feedback Mechanisms**: In-app feedback tool set up by June 1, ongoing surveys via Teams.
     """)
-    st.altair_chart(create_gantt_chart(df, "Phase 2: Execution and Monitoring", color_mapping), use_container_width=True)
 
 elif page == "Phase 3: Evaluation and Adjustment":
     st.title('Phase 3: Evaluation and Adjustment (July 9 - July 15)')
+    st.altair_chart(create_gantt_chart(df, "Phase 3: Evaluation and Adjustment"), use_container_width=True)
     st.write("""
     **Post-Implementation Review (July 9 - July 10)**
     - **Comprehensive Review**:
@@ -194,7 +195,6 @@ elif page == "Phase 3: Evaluation and Adjustment":
       - **Process Adjustments**: Streamlined the sprint planning process using **Jira**.
       - **Tool Enhancements**: Upgraded project management tools for better tracking, such as **Asana** for project management.
     """)
-    st.altair_chart(create_gantt_chart(df, "Phase 3: Evaluation and Adjustment"), use_container_width=True)
 
 elif page == "Complete Implementation Plan":
     st.title("Complete Implementation Plan")
