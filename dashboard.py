@@ -182,7 +182,6 @@ elif page == "Phase 3: Evaluation and Adjustment":
         - **On-time Delivery**: 95% of sprints completed on schedule.
         - **Budget Adherence**: Project completed within 10% of budget.
         - **Client Satisfaction**: 85% positive feedback from clients using **Teams**.
-      - **Performance Analysis**: 20% improvement in system performance monitored by **New Relic**.
     - **Lessons Learned**:
       - **What Worked**: Effective client involvement, robust feedback loops documented in **Confluence**.
       - **Areas for Improvement**: Need for better initial scope definition.
