@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import altair as alt
 
-st.set_page_config(layout="wide")
+st.set_page_config(page_title="Macrohard", layout="wide")
 
 # Define the tasks for each phase
 tasks = [
@@ -133,14 +133,14 @@ if page == "Phase 1: Planning and Preparation":
       - Client Liaison: Mark Johnson.
     - **Communication Plan**:
       - Weekly Status Reports: Sent every Friday using **Jira**.
-      - Monthly Review Meetings: First Monday of each month via **Zoom**.
-      - Communication Channels: Email, **Slack**, **Jira**, **Zoom**.
-      - Feedback Loops: Monthly surveys using **SurveyMonkey**, dedicated feedback email.
+      - Monthly Review Meetings: First Monday of each month via **Teams**.
+      - Communication Channels: Email, **Teams**, **Jira**.
+      - Feedback Loops: Monthly surveys using **Teams**.
     """)
     st.write("""
     **Team Training and Tool Setup (May 26 - May 27)**
     - **Agile Training**: Conduct Agile training sessions for the teams.
-    - **Tool Setup**: Set up Jira, Confluence, Slack, SurveyMonkey, and Zoom for project management and communication.
+    - **Tool Setup**: Set up Jira, Confluence, and Teams for project management and communication.
     """)
     st.altair_chart(create_gantt_chart(df, "Phase 1: Planning and Preparation"), use_container_width=True)
 
@@ -150,25 +150,25 @@ elif page == "Phase 2: Execution and Monitoring":
     **Sprint 1 (May 28 - June 10)**
     - **Sprint Planning (May 28)**: Define sprint backlog, assign tasks in Jira.
     - **Development and Testing (May 29 - June 9)**: Focus on core functionality upgrades.
-    - **Daily Stand-ups**: Held every morning at 9 AM via Slack.
+    - **Daily Stand-ups**: Held every morning at 9 AM via Teams.
     - **Sprint Review and Retrospective (June 10)**: Review completed work, gather feedback, and plan for the next sprint.
 
     **Sprint 2 (June 11 - June 24)**
     - **Sprint Planning (June 11)**: Define sprint backlog, assign tasks in Jira.
     - **Development and Testing (June 12 - June 23)**: Focus on integration with existing client systems.
-    - **Daily Stand-ups**: Held every morning at 9 AM via Slack.
+    - **Daily Stand-ups**: Held every morning at 9 AM via Teams.
     - **Sprint Review and Retrospective (June 24)**: Review completed work, gather feedback, and plan for the next sprint.
 
     **Sprint 3 (June 25 - July 8)**
     - **Sprint Planning (June 25)**: Define sprint backlog, assign tasks in Jira.
     - **Development and Testing (June 26 - July 7)**: Focus on finalizing features and fixing bugs.
-    - **Daily Stand-ups**: Held every morning at 9 AM via Slack.
+    - **Daily Stand-ups**: Held every morning at 9 AM via Teams.
     - **Sprint Review and Retrospective (July 8)**: Review completed work, gather feedback, and prepare for release.
 
     **Continuous Client and User Involvement (May 28 - July 8)**
     - **Co-creation Workshops**: First workshop on June 1, second on July 1.
     - **Beta Testing**: Beta phase starts June 15, ends July 1.
-    - **Feedback Mechanisms**: In-app feedback tool set up by June 1, ongoing surveys via SurveyMonkey.
+    - **Feedback Mechanisms**: In-app feedback tool set up by June 1, ongoing surveys via Teams.
     """)
     st.altair_chart(create_gantt_chart(df, "Phase 2: Execution and Monitoring", color_mapping), use_container_width=True)
 
@@ -180,7 +180,7 @@ elif page == "Phase 3: Evaluation and Adjustment":
       - **Success Metrics**:
         - **On-time Delivery**: 95% of sprints completed on schedule.
         - **Budget Adherence**: Project completed within 10% of budget.
-        - **Client Satisfaction**: 85% positive feedback from clients using **SurveyMonkey**.
+        - **Client Satisfaction**: 85% positive feedback from clients using **Teams**.
       - **Performance Analysis**: 20% improvement in system performance monitored by **New Relic**.
     - **Lessons Learned**:
       - **What Worked**: Effective client involvement, robust feedback loops documented in **Confluence**.
